@@ -12,10 +12,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display:block;
 }
 
-body {
-  line-height:1;
-}
-
 ul, ol {
   list-style:none;
 }
@@ -39,19 +35,65 @@ table {
   box-sizing:content-box;
 }
 body {
+  line-height:1;
   font-family:'Realeway', Verdana, sans-serif;
   margin:0 auto;
-  width:1200px;
   height:2273px;
+  text-decoration:none;
 }
 
 .width {
-  width:1055px;
+  width:1044px;
   position:relative;
   margin-right:auto;
   margin-left:auto;
 }
+/*new parametrs to web*/sub, sup {
+  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+  font-size: 75%;
 
+  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer's reset.css, this is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+
+sub {
+  /* Move the subscripted text down, but only half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+sub, sup {
+  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer's reset.css, this is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+
+sub {
+  /* Move the subscripted text down, but only half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
 /*header*/
 header {
   text-transform: uppercase;
@@ -64,9 +106,21 @@ header {
   background-color:#000000;
 }
 
+.part_header{
+  font-size:22px;
+  color:#000000;
+  width:320px;
+  line-height:2;
+  border-bottom:8px solid #24baa0;
+}
+
 .span_green {
   color:#27c7ab;
   font:bold;
+}
+
+.strong{
+  font-weight:bold;
 }
 
 .logo {
@@ -206,19 +260,21 @@ display:inline-block;
 		height: 0;
 		display: inline-block;
 	}
-
+/*priceboxes*/
+.price_boxes_container{
+  margin-top: 155px;
+}
 .price_box1 {
   display:inline-block;
-  margin-top:155px;
   width:329px;
   height:502px;
   background-color:#f9f9f9;
   border:2px solid #d6d5d5;
+  float:left;
 }
 
 .price_box2 {
   display:inline-block;
-  margin-top:155px;
   width:329px;
   height:502px;
   background-color:#27c7ab;
@@ -227,11 +283,11 @@ display:inline-block;
 
 .price_box3 {
   display:inline-block;
-  margin-top:155px;
   width:329px;
   height:502px;
   background-color:#f9f9f9;
   border:2px solid #d6d5d5;
+  float:right;
 }
 
 .price_box_header {
@@ -260,39 +316,108 @@ footer {
   width:100%;
   height:654px;
   background-color:#ffffff;
-  border:2px solid red;
 }
 
-.part_header{
-  font-size:16px;
+/*footer left*/
+.footer_part_header{
+  font-size:22px;
   color:#000000;
   width:320px;
   line-height:2;
   border-bottom:8px solid #24baa0;
+  margin-bottom:33px;
 }
 
-.footer_left{
-  display: inline-block;
+.section_contact_form_left {
+  display:inline-block;
   float:left;
-  width:60%;
+  position: relative;
+  margin-top: 73px;
 }
 
-.footer_right{
-  display: inline-block;
+.footer_checkbox {
+  border: 1px solid #27c7ab;
+  padding: 3px;
+  border-radius: 10px;
+  display:inline-block;
+}
+
+.footer_copyright {
+  color:#aeaeae;
+  font-size:14px;
+  position: absolute;
+  margin-bottom: 0;
+  margin-left:0;
+  margin-top:83px;
+}
+
+/*footer right*/
+.section_contact_form_right {
+  font-size:14px;
+  display:inline-block;
   float:right;
-  width:39%;
+  width:35%;
+  margin-top:133px;
+}
+
+.footer_img{
+  margin-bottom: 38px;
+  margin-left: 40px;
+}
+
+.footer_button_submit{
+  font-size: 34px;
+    color: #fff;
+    height: 73px;
+    width: 342px;
+    background-color: #24baa0;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 73px;
+    margin: 20px 0 0 0;
+}
+
+.footer_checkbox_text {
+  display:inline-block;
+  margin-left: 11px;
+  color:#aeaeae;
+  font-size:16px;
+}
+.icon_and_logo {
+margin-top:94px;
 }
 
 .footer_ico {
   display:inline-block;
-}
-
-.footer_bottom_right {
-  display:inline-block;
-  float:right;
-}
-
-.footer_bottom_left {
-  display:inline-block;
   float:left;
+}
+
+.footer_logo {
+  color:#9b9b9b;
+  font-size:20px;
+  font-weight:200;
+  float:right;
+  line-height: 50px;
+}
+
+input {
+  width:550px;
+  height:66px;
+  margin-bottom: 28px;
+  border:1px solid #24baa0;
+  font-size:33px;
+  color:#aeaeae;
+  font-family:'Realeway', Verdana, sans-serif;
+  padding-left:18px;
+}
+
+textarea {
+  width:550px;
+  height:166px;
+  margin-bottom: 28px;
+  border:1px solid #24baa0;
+  font-size:33px;
+  color:#aeaeae;
+  padding-left:18px;
+  font-family:'Realeway', Verdana, sans-serif;
 }
