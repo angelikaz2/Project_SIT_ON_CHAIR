@@ -112,6 +112,8 @@ header {
   width:320px;
   line-height:2;
   border-bottom:8px solid #24baa0;
+  margin-bottom: -50px;
+  margin-top: 100px;
 }
 
 .span_green {
@@ -239,7 +241,6 @@ h1 {
 }
 
 .article1 {
-  border:1px solid red;
   position:relative;
 }
 
@@ -247,8 +248,9 @@ h1 {
 display:inline-block;
   width:329px;
   height:225px;
-  margin-top:29px;
-  margin-right:22px;
+  margin-top:28px;
+  margin-right:6px;
+  position: relative;
 }
 
 .boxes {
@@ -259,10 +261,39 @@ display:inline-block;
   width:342px;
   height:254px;
   position:absolute;
-  top:29px;
+  top:28px;
   right:0;
   border:1px solid #c2c2c2;
   margin-bottom:70px;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding:10px;
+}
+
+.image_strip_background{
+  position: absolute;
+  bottom: 14px;
+  width:100%;
+  height:62px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.image_strip_font{
+  color:#000000;
+  font-size: 14px;
+  line-height: 4em;
+  margin-left: 13px;
+}
+
+.image_green_stip{
+  background-color:#24baa0;
+  width:138px;
+  height:7px;
+  position: absolute;
+  margin-left: 13px;
+  bottom:25px;
 }
 
 .line_small {
@@ -287,10 +318,58 @@ display:inline-block;
 		height: 0;
 		display: inline-block;
 	}
+
 /*priceboxes*/
-.price_boxes_container{
-  margin-top: 155px;
+.big_circle{
+  border-radius: 100%;
+  width:60px;
+  height:60px;
+  background-color: #ffffff;
+  border: 1px solid #c2c2c2;
+  position: relative;
 }
+
+.small_circle{
+  border-radius: 100%;
+  background-color: #c2c2c2;
+  width:25px;
+  height:25px;
+  border: 1px solid #c2c2c2;
+  position: absolute;
+  top:17px;
+  left:16px;
+}
+
+.big_circle_green{
+  border-radius: 100%;
+  width:60px;
+  height:60px;
+  background-color: #27c7ab;
+  border: 1px solid #27c7ab;
+  position: relative;
+}
+
+.small_circle_green{
+  border-radius: 100%;
+  width:25px;
+  height:25px;
+  background-color:#f9f9f9;
+  border: 1px solid #f9f9f9;
+  position: absolute;
+  top:17px;
+  left:16px;
+}
+
+.box_circle_container {
+  position: absolute;
+  top: -40px;
+  left: 134px;
+}
+
+.price_boxes_container{
+  margin-top: 115px;
+}
+
 .price_box1 {
   display:inline-block;
   width:329px;
@@ -298,14 +377,18 @@ display:inline-block;
   background-color:#f9f9f9;
   border:2px solid #d6d5d5;
   float:left;
+  position: relative;
 }
 
 .price_box2 {
   display:inline-block;
+  margin-left:21px;
+  margin-right:21px;
   width:329px;
   height:502px;
   background-color:#27c7ab;
   border:2px solid #27c7ab;
+  position: relative;
 }
 
 .price_box3 {
@@ -315,6 +398,7 @@ display:inline-block;
   background-color:#f9f9f9;
   border:2px solid #d6d5d5;
   float:right;
+  position: relative;
 }
 
 .price_box_header {
