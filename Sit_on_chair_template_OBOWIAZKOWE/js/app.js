@@ -42,3 +42,14 @@ function mcancelclosetime()
 
 // close layer when click-out
 document.onclick = mclose;
+
+//img_gallery_display_none
+function image_show() {
+  document.querySelector('.image_strip_background').style.display = 'block';
+	document.querySelector('.image_green_strip').style.display = 'block';
+}
+
+function image_hide() {
+  document.querySelector('.image_strip_background').style.display = 'none';
+	document.querySelector('.image_green_strip').style.display = 'none';
+}

@@ -308,6 +308,15 @@ display:inline-block;
   position: relative;
 }
 
+.box2 {
+display:inline-block;
+  width:329px;
+  height:225px;
+  margin-top:28px;
+  margin-right:6px;
+  position: relative;
+}
+
 .boxes {
   position:relative;
 }
