@@ -36,7 +36,7 @@ table {
 }
 body {
   line-height:1;
-  font-family:'Realeway', Verdana, sans-serif;
+  font-family: 'ralewayregular', Verdana, sans-serif;
   margin:0 auto;
   height:2273px;
   text-decoration:none;
@@ -87,7 +87,7 @@ sub, sup {
 
 sup {
   /* Move the superscripted text up */
-  top: -0.5em;
+  top: -1.5em;
 }
 
 sub {
@@ -107,6 +107,7 @@ header {
 }
 
 .part_header{
+  font-family: 'ralewayregular', sans-serif;
   font-size:22px;
   color:#000000;
   width:320px;
@@ -118,7 +119,7 @@ header {
 
 .span_green {
   color:#27c7ab;
-  font-weight:bold;
+  font-family: 'ralewaybold',sans-serif;
   line-height: 70px;
 }
 
@@ -129,12 +130,14 @@ header {
 .logo {
   display:inline-block;
   float:left;
+  font-family: 'ralewayregular', sans-serif;
 }
 
 /*menu*/
 .menu {
   display:inline-block;
   float:right;
+  font-family: 'ralewaybold', sans-serif;
 }
 
 .menu  li {
@@ -187,10 +190,6 @@ h1 {
   font-size:40px;
   padding:2px 0 20px 0;
 }
-.span_green2 {
-  color:#27c7ab;
-  font-weight:bold;
-}
 
 .text_right {
   display:inline-block;
@@ -200,6 +199,7 @@ h1 {
   font-size:14px;
   color:#000;
   padding-top:144px;
+  font-family: 'ralewayregular', sans-serif;
 }
 
 
@@ -225,7 +225,7 @@ h1 {
   top:267px;
   color: #27c7ab;
   font-size: 75px;
-  font-family: 'ralewaylight';
+  font-family: 'ralewaylight', sans-serif;
 }
 
 .top_button_gradient_right{
@@ -234,7 +234,7 @@ h1 {
   top:267px;
   color: #27c7ab;
   font-size: 75px;
-  font-family: 'ralewaylight';
+  font-family: 'ralewaylight', sans-serif;
 
 }
 
@@ -256,7 +256,7 @@ display:inline-block;
 }
 
 .third_box {
-  width:342px;
+  width:337px;
   height:254px;
   position:absolute;
   top:28px;
@@ -280,20 +280,53 @@ display:inline-block;
 
 .image_strip_font{
   color:#000000;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 4em;
   margin-left: 13px;
+  font-family: 'ralewayregular', sans-serif;
+}
+.image_strip_font3{
+  color:#000000;
+  font-size: 16px;
+  margin-left: 13px;
+  font-family: 'ralewayregular', sans-serif;
 }
 
-.image_green_stip{
+.third_box_text{
+  font-size:14px;
+  font-family: 'ralewayregular', sans-serif;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.third_box_text_part2{
+  margin-top:33px;
+  font-size:14px;
+  font-family: 'ralewayregular', sans-serif;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.image_green_strip{
   background-color:#24baa0;
   width:138px;
   height:7px;
   position: absolute;
   margin-left: 13px;
   bottom:25px;
-}
+  }
 
+  .image_green_strip3{
+    background-color:#24baa0;
+    width:138px;
+    height:7px;
+    margin-left: 13px;
+  }
+
+.third_box_header{
+  margin-top:30px;
+  margin-bottom: 17px;
+}
 .line_small {
   background-color:#27c7ab;
   margin-top:6px;
@@ -403,6 +436,7 @@ display:inline-block;
   font-size:26px;
   margin-top:33px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .light_box{
@@ -454,6 +488,8 @@ display:inline-block;
 
 .price_value{
   font-size:45px;
+    font-family: 'ralewaybold', sans-serif;
+    margin-bottom:3px;
 }
 
 .value_container{
@@ -484,6 +520,7 @@ display:inline-block;
   font-size:26px;
   margin-top:33px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .price_button2{
@@ -502,6 +539,8 @@ display:inline-block;
 }
 .price_value2{
   font-size:45px;
+  margin-bottom:3px;
+  font-family: 'ralewaybold', sans-serif;
 }
 
 .value_container2 sup {
@@ -597,6 +636,7 @@ footer {
   margin-left: 11px;
   color:#aeaeae;
   font-size:16px;
+  font-family: 'ralewaylight', sans-serif;
 }
 .icon_and_logo {
 margin-top:94px;
@@ -613,6 +653,7 @@ margin-top:94px;
   font-weight:200;
   float:right;
   line-height: 50px;
+  font-family: 'ralewayregular', sans-serif;
 }
 
 input {
@@ -622,7 +663,7 @@ input {
   border:1px solid #24baa0;
   font-size:33px;
   color:#aeaeae;
-  font-family:'Realeway', Verdana, sans-serif;
+  font-family: 'ralewaylight', sans-serif;
   padding-left:18px;
 }
 
@@ -634,5 +675,5 @@ textarea {
   font-size:33px;
   color:#aeaeae;
   padding-left:18px;
-  font-family:'Realeway', Verdana, sans-serif;
+  font-family: 'ralewaylight', sans-serif;
 }
