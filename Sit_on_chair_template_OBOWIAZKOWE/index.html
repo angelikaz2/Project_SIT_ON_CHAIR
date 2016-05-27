@@ -39,20 +39,54 @@
 <!-- Article-->
     <article class="gradient_background">
       <div class="width">
-        <div class="top_gradient">
-            <div class="text_left">
-              <img src="images/black_chair.png">
-            </div>
-
-            <div class="text_right">
-              <h1>SIT <span class="span_green">ON</span> YOUR <span class="span_green">CHAIR</span>
-              </h1>
-              <span class="article_tresc_prawa">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>Suspendisse a pellentesque dui, non felis. Maecenas<br>malesuada elit lectus felis, malesuada ultricies. Curabitur et<br>ligula. Ut molestie a, ultricies porta urna.</span>
-              <div class="button">Zobacz więcej</div>
+        <div class="slider">
+          <ul>
+            <!-- Slide1  -->
+            <li>
+              <div class="slide1 slide_height">
+                <div class="text_left">
+                  <img src="images/black_chair.png">
+                </div>
+                <div class="text_right">
+                  <h1>SIT <span class="span_green">ON</span> YOUR <span class="span_green">CHAIR</span>
+                  </h1>
+                  <span class="article_tresc_prawa">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>Suspendisse a pellentesque dui, non felis. Maecenas<br>malesuada elit lectus felis, malesuada ultricies. Curabitur et<br>ligula. Ut molestie a, ultricies porta urna.</span>
+                  <div class="button">Zobacz więcej</div>
+                  </div>
+                </div>
+            </li>
+            <!-- Slide2 -->
+            <li>
+              <div class="slide2 slide_height">
+                <div class="text_left">
+                  <img src="images/orange_chair.png">
+                </div>
+                <div class="text_right">
+                  <h1><span class="span_green">ON</span> MODERN <span class="span_green">DESIGN</span>
+                  </h1>
+                  <span class="article_tresc_prawa">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>Suspendisse a pellentesque dui, non felis. Maecenas<br>malesuada elit lectus felis, malesuada ultricies. Curabitur et<br>ligula. Ut molestie a, ultricies porta urna.</span>
+                  <div class="button">Zobacz więcej</div>
+                  </div>
               </div>
-              <div class="top_button_gradient_left">&lt;</div>
-              <div class="top_button_gradient_right">&gt;</div>
-        </div>
+            </li>
+            <!-- Slide3 -->
+            <li>
+              <div class="slide3 slide_height">
+                <div class="text_left">
+                  <img src="images/red_chair_slider.png">
+                </div>
+                <div class="text_right">
+                  <h1>TURN <span class="span_green">ON</span> YOUR <span class="span_green">RELAX</span>
+                  </h1>
+                  <span class="article_tresc_prawa">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>Suspendisse a pellentesque dui, non felis. Maecenas<br>malesuada elit lectus felis, malesuada ultricies. Curabitur et<br>ligula. Ut molestie a, ultricies porta urna.</span>
+                  <div class="button">Zobacz więcej</div>
+                  </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="top_button_gradient_left">&lt;</div>
+      <div class="top_button_gradient_right">&gt;</div>
       </div>
     </article>
 
@@ -60,14 +94,14 @@
       <div class="width">
         <div class="article1">
           <div class="boxes">
-              <div class="box1" onmouseover="image_hide()" onmouseout="image_show()">
+              <div class="box1" onmouseover="image_hide(this)" onmouseout="image_show(this)">
                 <img src="images/box1_img.jpg">
                 <div class="image_strip_background">
                   <div class="image_strip_font">Chair CLAIR</div>
                 </div>
                 <div class="image_green_strip"></div>
               </div>
-              <div class="box1" onmouseover="image_hide();">
+              <div class="box1" onmouseover="image_hide(this)" onmouseout="image_show(this)">
                 <img src="images/box2_img.jpg">
                 <div class="image_strip_background">
                   <div class="image_strip_font">Chair MARGARITA</div>
@@ -90,6 +124,81 @@
       </div>
     </article>
 
+    <section class="application">
+        <div class="width">
+            <div class="choice_part inline">
+                <div class="form_header">
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <!--<div class="checkbox"></div>-->
+                    <!--<span class="list_label inline_text">Transport</span>-->
+                </div>
+              </div>
+            </div>
+                <div class="aplication_img"><img src="images/red.png"></div>
+                <section class="summary_part inline">
+                           <div class="align_right">
+                               <h3>PODSUMOWANIE</h3>
+                               <span class="green_bell"></span>
+                           </div>
+
+                           <div class="summary_panel">
+                               <div class="panel_left">
+                                   <h4 class="title">Twój fotel</h4>
+                                   <span class="color"></span>
+                                   <span class="pattern"></span>
+                                   <span class="transport"></span>
+                               </div>
+                               <div class="panel_right">
+                                   <h4 class="title value"></h4>
+                                   <span class="color value"></span>
+                                   <span class="pattern value"></span>
+                                   <span class="transport value"></span>
+                               </div>
+                               <div class="sum_label">SUMA</div>
+                               <div class="sum"><strong></strong></div>
+                           </div>
+                           <a href="" class="green_button">Zamawiam</a>
+                       </section>
+              </div>
+            </section>
+            <!-- calculator -->
+
+
+<!-- price -->
     <article class="grey_background">
       <div class="width">
         <div class="price">

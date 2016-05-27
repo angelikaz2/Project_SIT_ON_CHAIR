@@ -1,7 +1,7 @@
+
 var timeout	= 500;
 var closetimer	= 0;
 var ddmenuitem	= 0;
-
 // open hidden layer
 function mopen(id)
 {
@@ -36,7 +36,6 @@ function mcancelclosetime()
 	{
 		window.clearTimeout(closetimer);
 		closetimer = null;
-		console.log("dupa");
 	}
 }
 
@@ -44,12 +43,56 @@ function mcancelclosetime()
 document.onclick = mclose;
 
 //img_gallery_display_none
-function image_show() {
-  document.querySelector('.image_strip_background').style.display = 'block';
-	document.querySelector('.image_green_strip').style.display = 'block';
+function image_show(x) {
+  x.querySelector('.image_strip_background').style.display = 'block';
+	x.querySelector('.image_green_strip').style.display = 'block';
 }
 
-function image_hide() {
-  document.querySelector('.image_strip_background').style.display = 'none';
-	document.querySelector('.image_green_strip').style.display = 'none';
+function image_hide(x) {
+  x.querySelector('.image_strip_background').style.display = 'none';
+	x.querySelector('.image_green_strip').style.display = 'none';
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+//***SLIDER***
+var next = document.querySelector('.top_button_gradient_right');
+//przycisk prev
+var prev = document.querySelector('.top_button_gradient_left');
+//elementy listy z obrazkami
+var items = document.querySelectorAll(".slider > ul > li");
+//aktualnie wyswietlany obrazel
+var index = 0;
+
+function ShowNextSlide(){
+	items[index].classList.remove("visible");
+  index++;
+
+ if (index > items.length - 1) {
+	index =0;
+ }
+ items[index].classList.add("visible");
+}
+
+//pokazujemy aktualny obrazek
+items[index].classList.add("visible");
+
+//event dla guzika prevP
+prev.addEventListener("click", function(event) {
+ items[index].classList.remove("visible");
+ index--;
+
+ if (index < 0) {
+   index = 0;
+ }
+
+ items[index].classList.add("visible");
+
+ });
+
+next.addEventListener("click", function(event) {
+ShowNextSlide();
+
+});
+setInterval(ShowNextSlide, 5000);
+});
