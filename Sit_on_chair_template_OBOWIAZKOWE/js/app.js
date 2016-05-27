@@ -96,3 +96,83 @@ ShowNextSlide();
 });
 setInterval(ShowNextSlide, 5000);
 });
+
+
+// drop down form
+// * When the user clicks on the button,
+// toggle between hiding and showing the dropdown content */
+function myFunction(element) {
+    //element.getElementsByClassName("list_panel").classList.toggle("show");
+		el=element.querySelector(".list_panel");
+		if(el.style.display=="block")
+		{
+		el.style.display="none";
+		}
+		else{
+		el.style.display="block";
+	}
+}
+
+
+function sumUp()
+{
+var elements=document.querySelectorAll(".value");
+var suma=0;
+
+for(i=0;i<elements.length;i++){
+	console.log(elements[i]);
+	attvalue=elements[i].getAttribute("price");
+	if(attvalue===null){
+		attvalue=0;
+	}
+	suma=suma+parseInt(attvalue);
+}
+return suma;
+}
+
+function addToCart(element)
+{
+var category=element.getAttribute("category");
+var price=element.getAttribute("price");
+var element_text=element.innerHTML;
+if(category=="model"){
+text_slot=document.querySelector(".title");
+price_slot=document.querySelector(".title.value");
+	text_slot.innerHTML=element_text;
+	price_slot.innerHTML=price;
+	price_slot.setAttribute("price",price);
+}
+if(category=="color"){
+text_slot=document.querySelector(".color");
+price_slot=document.querySelector(".color.value");
+	text_slot.innerHTML=element_text;
+	price_slot.innerHTML=price;
+	price_slot.setAttribute("price",price);
+}
+if(category=="pattern"){
+text_slot=document.querySelector(".pattern");
+price_slot=document.querySelector(".pattern.value");
+	text_slot.innerHTML=element_text;
+	price_slot.innerHTML=price;
+	price_slot.setAttribute("price",price);
+}
+if(category=="transport"){
+	text_slot=document.querySelector(".transport");
+	price_slot=document.querySelector(".transport.value");
+	if(element.checked){
+		text_slot.innerHTML="Transport";
+		price_slot.innerHTML=price;
+		price_slot.setAttribute("price",price);
+	}
+	else{
+		text_slot.innerHTML="bez transportu";
+		price_slot.innerHTML=0;
+		price_slot.setAttribute("price",0);
+	}
+
+}
+
+suma=sumUp();
+document.querySelector(".sum").innerHTML=suma;
+
+}

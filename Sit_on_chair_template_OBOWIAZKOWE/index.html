@@ -133,34 +133,34 @@
                 </header>
 
                 <div class="form">
-                    <div class="drop_down_list">
+                    <div class="drop_down_list"  onclick="myFunction(this)">
                         <span class="list_label">Wybierz rodzaj</span>
                         <span class="list_arrow"></span>
                         <ul class="list_panel">
-                            <li>Clair</li>
-                            <li>Margarita</li>
-                            <li>Selena</li>
+                            <li price="100"  category="model" onclick="addToCart(this)">Clair</li>
+                            <li price="200"  category="model" onclick="addToCart(this)">Margarita</li>
+                            <li price="50"  category="model" onclick="addToCart(this)">Selena</li>
                         </ul>
                     </div>
-                    <div class="drop_down_list">
+                    <div class="drop_down_list"  onclick="myFunction(this)">
                         <span class="list_label">Wybierz kolor</span>
                         <span class="list_arrow"></span>
                         <ul class="list_panel">
-                            <li>Czerwony</li>
-                            <li>Czarny</li>
-                            <li>Pomarańczowy</li>
+                            <li price="20"  category="color" onclick="addToCart(this)">Czerwony</li>
+                            <li price="30"  category="color" onclick="addToCart(this)">Czarny</li>
+                            <li price="40"  category="color" onclick="addToCart(this)">Pomarańczowy</li>
                         </ul>
                     </div>
-                    <div class="drop_down_list">
+                    <div class="drop_down_list"  onclick="myFunction(this)">
                         <span class="list_label">Wybierz materiał</span>
                         <span class="list_arrow"></span>
                         <ul class="list_panel">
-                            <li>Tkanina</li>
-                            <li>Skóra</li>
+                            <li price="500"  category="pattern" onclick="addToCart(this)">Tkanina</li>
+                            <li price="1000"  category="pattern" onclick="addToCart(this)">Skóra</li>
                         </ul>
                     </div>
                     <div class="checkbox check-box">
-                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <input type="checkbox" id="transport" category="transport" price="200" onclick="addToCart(this)">
                         <label for="transport">Transport</label>
                     </div>
                     <!--<div class="checkbox"></div>-->
