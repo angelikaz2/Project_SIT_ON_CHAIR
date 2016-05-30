@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="css/webfonts.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/app.js" type="text/javascript"></script>
+
+    <meta charset="UTF-8">
+    <title>SIT ON CHAIR</title>
+  </head>
+  <body>
+<!-- Header -->
+<header>
+  <div class="width">
+    <div class="logo">
+      <span>sit
+      <span class="span_green" "strong">on</span>
+      chair
+      </span>
+    </div>
+    <ul class="menu">
+      <li onmouseover="menu_show(this)"  class="dropdown"><a href="#">O firmie</a>
+          <ul id="m1" onmouseout="menu_hide(this)">
+            <li href="#"><a>Aktualności</a></li>
+            <li href="#"><a>Nasz team</a></li>
+            <li href="#"><a>Historia</a></li>
+          </ul>
+      </li>
+      <li><a href="#">Galeria</a>
+      </li>
+      <li><a href="#">Kontakt</a></li>
+  </ul>
+  </div>
+</header>
+
+<!-- Article-->
+    <article class="gradient_background">
+      <div class="width">
+        <div class="slider">
+          <ul>
+            <!-- Slide1  -->
+            <li>
+              <div class="slide1 slide_height">
+                <div class="text_left">
+                  <img src="images/black_chair.png">
+                </div>
+                <div class="text_right">
+                  <h1>SIT <span class="span_green">ON</span> YOUR <span class="span_green">CHAIR</span>
+                  </h1>
+                  <span class="article_tresc_prawa">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>Suspendisse a pellentesque dui, non felis. Maecenas<br>malesuada elit lectus felis, malesuada ultricies. Curabitur et<br>ligula. Ut molestie a, ultricies porta urna.</span>
+                  <div class="button">Zobacz więcej</div>
+                  </div>
+                </div>
+            </li>
+            <!-- Slide2 -->
+            <li>
+              <div class="slide2 slide_height">
+                <div class="text_left">
+                  <img src="images/orange_chair.png">
+                </div>
+                <div class="text_right">
+                  <h1><span class="span_green">ON</span> MODERN <span class="span_green">DESIGN</span>
+                  </h1>
+                  <span class="article_tresc_prawa">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>Suspendisse a pellentesque dui, non felis. Maecenas<br>malesuada elit lectus felis, malesuada ultricies. Curabitur et<br>ligula. Ut molestie a, ultricies porta urna.</span>
+                  <div class="button">Zobacz więcej</div>
+                  </div>
+              </div>
+            </li>
+            <!-- Slide3 -->
+            <li>
+              <div class="slide3 slide_height">
+                <div class="text_left">
+                  <img src="images/red_chair_slider.png">
+                </div>
+                <div class="text_right">
+                  <h1>TURN <span class="span_green">ON</span> YOUR <span class="span_green">RELAX</span>
+                  </h1>
+                  <span class="article_tresc_prawa">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>Suspendisse a pellentesque dui, non felis. Maecenas<br>malesuada elit lectus felis, malesuada ultricies. Curabitur et<br>ligula. Ut molestie a, ultricies porta urna.</span>
+                  <div class="button">Zobacz więcej</div>
+                  </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="top_button_gradient_left">&lt;</div>
+      <div class="top_button_gradient_right">&gt;</div>
+      </div>
+    </article>
+
+    <article>
+      <div class="width">
+        <div class="article1">
+          <div class="boxes">
+              <div class="box1" onmouseover="image_hide(this)" onmouseout="image_show(this)">
+                <img src="images/box1_img.jpg">
+                <div class="image_strip_background">
+                  <div class="image_strip_font">Chair CLAIR</div>
+                </div>
+                <div class="image_green_strip"></div>
+              </div>
+              <div class="box1" onmouseover="image_hide(this)" onmouseout="image_show(this)">
+                <img src="images/box2_img.jpg">
+                <div class="image_strip_background">
+                  <div class="image_strip_font">Chair MARGARITA</div>
+                </div>
+                <div class="image_green_strip"></div>
+              </div>
+              </div>
+          <div class="third_box">
+            <div class="third_box_header">
+            <div class="image_strip_font3">Find all inputs
+
+            </div><div class="image_green_strip3"></div>
+            </div>
+            <div class="third_box_text">Find all inputs that are not checked and<br>highlights the next sibling span.
+            Notice there<br> is no change when clicking the chceckboxes since no click events have been linked.
+            </div>
+            <div class="third_box_text_part2">Notice there is no change when clicking the<br> checkboxes since no click events have been.
+            </div>
+        </div>
+      </div>
+    </article>
+
+    <section class="application">
+        <div class="width">
+            <div class="choice_part inline">
+                <div class="form_header">
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="form">
+                    <div class="drop_down_list"  onclick="myFunction(this)">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li price="100"  category="model" onclick="addToCart(this)">Clair</li>
+                            <li price="200"  category="model" onclick="addToCart(this)">Margarita</li>
+                            <li price="50"  category="model" onclick="addToCart(this)">Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list"  onclick="myFunction(this)">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li price="20"  category="color" onclick="addToCart(this)">Czerwony</li>
+                            <li price="30"  category="color" onclick="addToCart(this)">Czarny</li>
+                            <li price="40"  category="color" onclick="addToCart(this)">Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list"  onclick="myFunction(this)">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li price="500"  category="pattern" onclick="addToCart(this)">Tkanina</li>
+                            <li price="1000"  category="pattern" onclick="addToCart(this)">Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" category="transport" price="200" onclick="addToCart(this)">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <!--<div class="checkbox"></div>-->
+                    <!--<span class="list_label inline_text">Transport</span>-->
+                </div>
+              </div>
+            </div>
+                <div class="aplication_img"><img src="images/red.png"></div>
+                <section class="summary_part inline">
+                           <div class="align_right">
+                               <h3>PODSUMOWANIE</h3>
+                               <span class="green_bell"></span>
+                           </div>
+
+                           <div class="summary_panel">
+                               <div class="panel_left">
+                                   <h4 class="title">Twój fotel</h4>
+                                   <span class="color"></span>
+                                   <span class="pattern"></span>
+                                   <span class="transport"></span>
+                               </div>
+                               <div class="panel_right">
+                                   <h4 class="title value"></h4>
+                                   <span class="color value"></span>
+                                   <span class="pattern value"></span>
+                                   <span class="transport value"></span>
+                               </div>
+                               <div class="sum_label">SUMA</div>
+                               <div class="sum"><strong></strong></div>
+                           </div>
+                           <a href="" class="green_button">Zamawiam</a>
+                       </section>
+              </div>
+            </section>
+            <!-- calculator -->
+
+
+<!-- price -->
+    <article class="grey_background">
+      <div class="width">
+        <div class="price">
+          <div class="part_header">CENNIK</div>
+          <div class="price_boxes_container">
+
+            <div class="price_box1">
+              <div class="box_circle_container">
+                <div class="big_circle">
+                  <div class="small_circle"></div>
+                </div>
+              </div>
+                <div class="price_box_header">basic plan</div>
+                <div class="price_box_circle">
+                  <div class="value_container">
+                    <div class="price_value">85<sup>99</sup></div>
+                    <div class="price_value_time">PLN/MSC</div>
+                  </div>
+                </div>
+              <div class="dark_box">Zakup towaru + dowoz</div>
+              <div class="light_box">Serwis</div>
+              <div class="price_button">DOŁĄCZ</div>
+              </div>
+
+            <div class="price_box2">
+              <div class="box_circle_container">
+                <div class="big_circle_green">
+                  <div class="small_circle_green"></div>
+                </div>
+              </div>
+                <div class="price_box_header2">standard plan</div>
+                <div class="price_box_circle2">
+                  <div class="value_container2">
+                    <div class="price_value2">95<sup>99</sup></div>
+                    <div class="price_value_time2">PLN/MSC</div>
+                  </div>
+                </div>
+                <div class="light_box">Zakup towaru + dowoz</div>
+                <div class="dark_box">Serwis</div>
+                <div class="light_box">Gwarancja 5 lat</div>
+              <div class="price_button2">DOŁĄCZ</div>
+            </div>
+
+            <div class="price_box3">
+              <div class="box_circle_container">
+                <div class="big_circle">
+                  <div class="small_circle"></div>
+              </div>
+            </div>
+            <div class="price_box_header">advance plan</div>
+            <div class="price_box_circle">
+              <div class="value_container">
+                <div class="price_value">211<sup>00</sup></div>
+                <div class="price_value_time">PLN/MSC</div>
+              </div>
+            </div>
+            <div class="dark_box">Zakup towaru + dowoz</div>
+            <div class="light_box">Serwis</div>
+            <div class="dark_box">Gwarancja 6 lat</div>
+            <div class="light_box">Porady projektanta</div>
+            <div class="price_button">DOŁĄCZ</div>
+          </div>
+        </div>
+      </div>
+  </article>
+
+<!-- Contact form -->
+
+    <footer class="width">
+      <!-- section left -->
+          <div class="section_contact_form_left">
+            <div class="footer_part_header">KONTAKT</div>
+            <div class="contact_form">
+              <input type="text" name="name" placeholder="Imię"/><br>
+              <input type="email" name="email" placeholder="email"/><br>
+              <textarea name="comment" form="form">Wiadomość</textarea>
+            </div>
+            <div class="footer_copyright">Copyright 2014&nbsp;|&nbsp;All Rights Reserved.&nbsp;-&nbsp;Sit On Chair</div>
+          </div>
+
+    <!-- section right -->
+          <div class="section_contact_form_right">
+            <div class="footer_img"><img src="images/red_chair.png"></div>
+              <div class="footer_checkbox"><img src="images/form_ok.jpg"></div>
+              <div class="footer_checkbox_text">Zgadzam się na przetwarzanie<br> danych osobowych</div>
+            <div class="footer_button_submit">WYŚLIJ</div>
+
+            <div class="icon_and_logo">
+              <div class="footer_icon">
+                <div class="footer_ico"><img src="images/flickr.png"></div>
+                <div class="footer_ico"><img src="images/vimeo.png"></div>
+                <div class="footer_ico"><img src="images/pinterest.png"></div>
+                <div class="footer_ico"><img src="images/twitter.png"></div>
+              </div>
+              <div class="footer_logo">SIT<span class="strong"> ON </span>CHAIR</div>
+            </div>
+
+          </div>
+
+        </section>
+    </footer>
+
+  </body>
+  </html>
